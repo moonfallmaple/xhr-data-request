@@ -1,0 +1,72 @@
+
+.flex-container {
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        background-color: DodgerBlue;
+}
+                
+.flex-container > div {
+        width: webkit-fit-available;
+        height:auto;
+        border-style: solid;
+        margin: 20px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+}
+form{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+}
+#search-keyword {
+        width: 40%;
+        height: 50px;
+        padding: 5px;
+}
+               
+
+#submit-btn {
+        margin:15px;
+        width:150px;
+        height: 35px;
+        font-size: 14px;
+}
+img{
+        width: 100%; 
+        height:100%; 
+}
+figcaption{
+        font-size: 18px;
+}
+#response-container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+}
+
+figure{
+        width:43%;
+     
+}
+@media screen and (max-width:549px){
+
+        #response-container >figure{
+                margin:10px;
+                width:100%; 
+        }
+        
+
+}
+
+@media screen and (min-width:770px) and (max-width:1024px){
+
+        #response-container >figure{
+                margin:10px;
+                width:100%; 
+        }
+        
+
+}
