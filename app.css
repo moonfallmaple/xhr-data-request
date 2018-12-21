@@ -47,26 +47,63 @@ figcaption{
         flex-wrap:wrap;
 }
 
-figure{
-        width:43%;
-     
-}
+
 @media screen and (max-width:549px){
-
-        #response-container >figure{
-                margin:10px;
-                width:100%; 
-        }
+        #response-container{
+                padding:0 0 20px 0;
         
+        }
+        #response-container > #picture{ 
+                height:250px;
+                width:100%;
+                margin:10px 10px 50px 10px;
+
+        }       
 
 }
-
+@media screen and (min-width:550px) and (max-width:769px){
+        #response-container{
+                display: grid;
+                grid-template-columns: auto auto ; 
+                grid-row-gap: 50px;
+                grid-column-gap: 20px;
+                overflow: scroll;
+                margin: 15px;
+        }
+        #response-container > #picture{ 
+                height:350px;
+                
+        }
+       
+}
 @media screen and (min-width:770px) and (max-width:1024px){
 
-        #response-container >figure{
-                margin:10px;
-                width:100%; 
-        }
+        #response-container{
+                display: grid;
+                grid-template-columns: auto auto auto ; 
+                grid-row-gap: 60px;
+                padding:0 0 100px 0;
         
+        }
+        #response-container > #picture{ 
+                height:350px;
+                margin: 20px 20px 0 20px;
+        }    
+
+}
+@media screen and (min-width:1025px){
+        #response-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto; 
+                grid-row-gap: 50px;
+                grid-column-gap: 10px;
+                overflow: scroll;
+                padding:0 0 20px 0;
+        
+        }
+        #response-container > #picture{ 
+                height:350px;
+                margin: 10px 10px 0 10px;
+        }
 
 }

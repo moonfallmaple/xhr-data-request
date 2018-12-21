@@ -20,12 +20,12 @@ const responseContainer = document.querySelector('#response-container');
                 let response = JSON.parse(this.responseText);
         //This part code is to get the top 6 pictures for keyword-result 
                         for(let i=0;i<6;i++){
-                                htmlContent=`<figure>
+                                htmlContent=`<div id=picture>
                                 <a href="${response.results[i].urls.regular}">
                                         <img src="${response.results[i].urls.regular}" alt="${searchedForText}">
                                 </a>
                                 <figcaption>${searchedForText} by ${response.results[i].user.name}</figcaption>
-                                </figure>`;
+                               </div>`;
                                 responseContainer.insertAdjacentHTML("afterbegin",htmlContent);
                                 
         //This part code is to get fisrt picture for keyword-result               
